@@ -90,6 +90,7 @@ robots.loader.load('Soldier.glb', (gltf) => {
     gltf.scene.traverse((child) => {
         if(child instanceof THREE.Mesh) {
             child.castShadow = true
+            child.receiveShadow = true
         }
     })
 })
